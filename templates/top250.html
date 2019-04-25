@@ -1,0 +1,24 @@
+<h1>豆瓣top250</h1>
+<form>
+    <table border="1">
+        <tr>
+            <td>编号</td>
+            <td>电影名称</td>
+            <td>导演</td>
+            <td>评语</td>
+            <td>评分</td>
+        </tr>
+        {% for i in html_data.all %}
+            <tr>
+                <td>{{ i.num }}</td>
+                <td>{{ i.name }}</td>
+                <td>{{ i.charactor }}</td>
+                <td>{{ i.remark }}</td>
+                <td>{{ i.score }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+
+
+</form>
